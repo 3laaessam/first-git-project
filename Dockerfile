@@ -1,7 +1,11 @@
-FROM alpine 
+FROM openjdk 
 
-WORKDIR /app
+WORKDIR /Mylocation
 
-COPY test.js
+COPY alaa.java .
 
-INSTALL 
+RUN javac alaa.java
+
+CMD javac alaa
+
+
